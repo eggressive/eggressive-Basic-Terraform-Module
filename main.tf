@@ -12,9 +12,9 @@ module "vpc" {
   region = var.main_region
 }
 
-resource "aws_instance" "my-instance" {
+resource "aws_instance" "lalala" {
   ami           = module.vpc.ami_id
   subnet_id     = module.vpc.subnet_id
-  instance_type = "t2.micro"
+  instance_type = "t3.micro"
 }
 
